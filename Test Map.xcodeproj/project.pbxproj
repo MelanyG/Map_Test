@@ -7,23 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36888F4B2A51C4C9000F78F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F4A2A51C4C9000F78F3 /* AppDelegate.swift */; };
-		36888F4D2A51C4C9000F78F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F4C2A51C4C9000F78F3 /* SceneDelegate.swift */; };
-		36888F4F2A51C4C9000F78F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F4E2A51C4C9000F78F3 /* ViewController.swift */; };
 		36888F522A51C4C9000F78F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36888F502A51C4C9000F78F3 /* Main.storyboard */; };
 		36888F542A51C4CA000F78F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36888F532A51C4CA000F78F3 /* Assets.xcassets */; };
 		36888F572A51C4CA000F78F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36888F552A51C4CA000F78F3 /* LaunchScreen.storyboard */; };
+		36888F8F2A51EA30000F78F3 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36888F8E2A51EA30000F78F3 /* ColorAssets.xcassets */; };
+		36888FB12A51F209000F78F3 /* ControllerCreationFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F942A51F209000F78F3 /* ControllerCreationFabric.swift */; };
+		36888FB22A51F209000F78F3 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F962A51F209000F78F3 /* Controllers.swift */; };
+		36888FB32A51F209000F78F3 /* BaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F972A51F209000F78F3 /* BaseConfigurator.swift */; };
+		36888FB42A51F209000F78F3 /* BaseConfiguratorContainingControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F982A51F209000F78F3 /* BaseConfiguratorContainingControllerType.swift */; };
+		36888FB52A51F209000F78F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F9C2A51F209000F78F3 /* Constants.swift */; };
+		36888FB62A51F209000F78F3 /* PlainModelFillable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F9E2A51F209000F78F3 /* PlainModelFillable.swift */; };
+		36888FB72A51F209000F78F3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888F9F2A51F209000F78F3 /* Model.swift */; };
+		36888FB82A51F209000F78F3 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FA02A51F209000F78F3 /* Configurable.swift */; };
+		36888FB92A51F209000F78F3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FA12A51F209000F78F3 /* Presenter.swift */; };
+		36888FBA2A51F209000F78F3 /* NavigationControllerEmbedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FA22A51F209000F78F3 /* NavigationControllerEmbedding.swift */; };
+		36888FBB2A51F209000F78F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FA42A51F209000F78F3 /* ViewController.swift */; };
+		36888FBC2A51F209000F78F3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FA52A51F209000F78F3 /* BaseViewController.swift */; };
+		36888FBD2A51F209000F78F3 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FA62A51F209000F78F3 /* BaseNavigationViewController.swift */; };
+		36888FBE2A51F209000F78F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FA82A51F209000F78F3 /* AppDelegate.swift */; };
+		36888FBF2A51F209000F78F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FA92A51F209000F78F3 /* SceneDelegate.swift */; };
+		36888FC02A51F209000F78F3 /* MapsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FAD2A51F209000F78F3 /* MapsListPresenter.swift */; };
+		36888FC12A51F209000F78F3 /* MapsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FAE2A51F209000F78F3 /* MapsListViewController.swift */; };
+		36888FC22A51F209000F78F3 /* MapsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FAF2A51F209000F78F3 /* MapsListModel.swift */; };
+		36888FC32A51F209000F78F3 /* MapsListMainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FB02A51F209000F78F3 /* MapsListMainConfigurator.swift */; };
+		36888FCB2A520B89000F78F3 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FC92A520B89000F78F3 /* NavigationBar.swift */; };
+		36888FCC2A520B89000F78F3 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36888FCA2A520B89000F78F3 /* NavigationBar.xib */; };
+		36888FD02A520BEE000F78F3 /* DeviceDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FCF2A520BEE000F78F3 /* DeviceDataView.swift */; };
+		36888FD22A520C05000F78F3 /* DeviceDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36888FD12A520C05000F78F3 /* DeviceDataView.xib */; };
+		36888FD42A520F88000F78F3 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FD32A520F88000F78F3 /* NibDesignable.swift */; };
+		36888FDB2A52209F000F78F3 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FDA2A52209F000F78F3 /* Units.swift */; };
+		36888FDF2A527CC5000F78F3 /* CountryCellPlainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FDE2A527CC5000F78F3 /* CountryCellPlainModel.swift */; };
+		36888FE22A527F23000F78F3 /* XMLParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FE12A527F23000F78F3 /* XMLParserManager.swift */; };
+		36888FE52A528012000F78F3 /* CountryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FE42A528012000F78F3 /* CountryRepresentation.swift */; };
+		36888FE92A5283AE000F78F3 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FE72A5283AE000F78F3 /* CountryTableViewCell.swift */; };
+		36888FEA2A5283AE000F78F3 /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36888FE82A5283AE000F78F3 /* CountryTableViewCell.xib */; };
+		36888FEE2A5293B6000F78F3 /* regions.xml in Resources */ = {isa = PBXBuildFile; fileRef = 36888FED2A5293B6000F78F3 /* regions.xml */; };
+		36888FF02A52BD6F000F78F3 /* MapListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FEF2A52BD6F000F78F3 /* MapListConfigurator.swift */; };
+		36888FF22A52DDC9000F78F3 /* PendingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FF12A52DDC9000F78F3 /* PendingOperation.swift */; };
+		36888FF42A52DE71000F78F3 /* MapDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FF32A52DE71000F78F3 /* MapDownloader.swift */; };
+		36888FF62A52E4EC000F78F3 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36888FF52A52E4EC000F78F3 /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36888F472A51C4C9000F78F3 /* Test Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		36888F4A2A51C4C9000F78F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		36888F4C2A51C4C9000F78F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		36888F4E2A51C4C9000F78F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		36888F512A51C4C9000F78F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36888F532A51C4CA000F78F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36888F562A51C4CA000F78F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36888F582A51C4CA000F78F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36888F8E2A51EA30000F78F3 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		36888F942A51F209000F78F3 /* ControllerCreationFabric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerCreationFabric.swift; sourceTree = "<group>"; };
+		36888F962A51F209000F78F3 /* Controllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
+		36888F972A51F209000F78F3 /* BaseConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConfigurator.swift; sourceTree = "<group>"; };
+		36888F982A51F209000F78F3 /* BaseConfiguratorContainingControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConfiguratorContainingControllerType.swift; sourceTree = "<group>"; };
+		36888F9C2A51F209000F78F3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		36888F9E2A51F209000F78F3 /* PlainModelFillable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainModelFillable.swift; sourceTree = "<group>"; };
+		36888F9F2A51F209000F78F3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		36888FA02A51F209000F78F3 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		36888FA12A51F209000F78F3 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		36888FA22A51F209000F78F3 /* NavigationControllerEmbedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerEmbedding.swift; sourceTree = "<group>"; };
+		36888FA42A51F209000F78F3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		36888FA52A51F209000F78F3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		36888FA62A51F209000F78F3 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		36888FA82A51F209000F78F3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		36888FA92A51F209000F78F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		36888FAD2A51F209000F78F3 /* MapsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsListPresenter.swift; sourceTree = "<group>"; };
+		36888FAE2A51F209000F78F3 /* MapsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsListViewController.swift; sourceTree = "<group>"; };
+		36888FAF2A51F209000F78F3 /* MapsListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsListModel.swift; sourceTree = "<group>"; };
+		36888FB02A51F209000F78F3 /* MapsListMainConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsListMainConfigurator.swift; sourceTree = "<group>"; };
+		36888FC92A520B89000F78F3 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		36888FCA2A520B89000F78F3 /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		36888FCF2A520BEE000F78F3 /* DeviceDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDataView.swift; sourceTree = "<group>"; };
+		36888FD12A520C05000F78F3 /* DeviceDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceDataView.xib; sourceTree = "<group>"; };
+		36888FD32A520F88000F78F3 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		36888FDA2A52209F000F78F3 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		36888FDE2A527CC5000F78F3 /* CountryCellPlainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCellPlainModel.swift; sourceTree = "<group>"; };
+		36888FE12A527F23000F78F3 /* XMLParserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParserManager.swift; sourceTree = "<group>"; };
+		36888FE42A528012000F78F3 /* CountryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRepresentation.swift; sourceTree = "<group>"; };
+		36888FE72A5283AE000F78F3 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		36888FE82A5283AE000F78F3 /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
+		36888FED2A5293B6000F78F3 /* regions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = regions.xml; sourceTree = "<group>"; };
+		36888FEF2A52BD6F000F78F3 /* MapListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListConfigurator.swift; sourceTree = "<group>"; };
+		36888FF12A52DDC9000F78F3 /* PendingOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOperation.swift; sourceTree = "<group>"; };
+		36888FF32A52DE71000F78F3 /* MapDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDownloader.swift; sourceTree = "<group>"; };
+		36888FF52A52E4EC000F78F3 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +122,240 @@
 		36888F492A51C4C9000F78F3 /* Test Map */ = {
 			isa = PBXGroup;
 			children = (
-				36888F4A2A51C4C9000F78F3 /* AppDelegate.swift */,
-				36888F4C2A51C4C9000F78F3 /* SceneDelegate.swift */,
-				36888F4E2A51C4C9000F78F3 /* ViewController.swift */,
-				36888F502A51C4C9000F78F3 /* Main.storyboard */,
-				36888F532A51C4CA000F78F3 /* Assets.xcassets */,
-				36888F552A51C4CA000F78F3 /* LaunchScreen.storyboard */,
+				36888F902A51F209000F78F3 /* Sources */,
+				36888F612A51E02F000F78F3 /* Resources */,
+				36888F692A51E02F000F78F3 /* Services */,
 				36888F582A51C4CA000F78F3 /* Info.plist */,
 			);
 			path = "Test Map";
+			sourceTree = "<group>";
+		};
+		36888F612A51E02F000F78F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				36888FED2A5293B6000F78F3 /* regions.xml */,
+				36888F532A51C4CA000F78F3 /* Assets.xcassets */,
+				36888F502A51C4C9000F78F3 /* Main.storyboard */,
+				36888F552A51C4CA000F78F3 /* LaunchScreen.storyboard */,
+				36888F8E2A51EA30000F78F3 /* ColorAssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36888F692A51E02F000F78F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		36888F902A51F209000F78F3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				36888F912A51F209000F78F3 /* Core */,
+				36888FAB2A51F209000F78F3 /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		36888F912A51F209000F78F3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				36888F922A51F209000F78F3 /* Common */,
+				36888FA32A51F209000F78F3 /* ViewControllers */,
+				36888FA72A51F209000F78F3 /* Application */,
+				36888FAA2A51F209000F78F3 /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		36888F922A51F209000F78F3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				36888FE02A527EFF000F78F3 /* Managers */,
+				36888F932A51F209000F78F3 /* Fabrics */,
+				36888F952A51F209000F78F3 /* Configurators */,
+				36888F992A51F209000F78F3 /* Extensions */,
+				36888F9A2A51F209000F78F3 /* Structs */,
+				36888F9D2A51F209000F78F3 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		36888F932A51F209000F78F3 /* Fabrics */ = {
+			isa = PBXGroup;
+			children = (
+				36888F942A51F209000F78F3 /* ControllerCreationFabric.swift */,
+			);
+			path = Fabrics;
+			sourceTree = "<group>";
+		};
+		36888F952A51F209000F78F3 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				36888F962A51F209000F78F3 /* Controllers.swift */,
+				36888F972A51F209000F78F3 /* BaseConfigurator.swift */,
+				36888F982A51F209000F78F3 /* BaseConfiguratorContainingControllerType.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		36888F992A51F209000F78F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36888F9A2A51F209000F78F3 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				36888F9B2A51F209000F78F3 /* Constants */,
+				36888FDA2A52209F000F78F3 /* Units.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		36888F9B2A51F209000F78F3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				36888F9C2A51F209000F78F3 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		36888F9D2A51F209000F78F3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				36888F9E2A51F209000F78F3 /* PlainModelFillable.swift */,
+				36888F9F2A51F209000F78F3 /* Model.swift */,
+				36888FA02A51F209000F78F3 /* Configurable.swift */,
+				36888FA12A51F209000F78F3 /* Presenter.swift */,
+				36888FA22A51F209000F78F3 /* NavigationControllerEmbedding.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		36888FA32A51F209000F78F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36888FA42A51F209000F78F3 /* ViewController.swift */,
+				36888FA52A51F209000F78F3 /* BaseViewController.swift */,
+				36888FA62A51F209000F78F3 /* BaseNavigationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36888FA72A51F209000F78F3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				36888FA82A51F209000F78F3 /* AppDelegate.swift */,
+				36888FA92A51F209000F78F3 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		36888FAA2A51F209000F78F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36888FC82A520B89000F78F3 /* NavigationBar */,
+				36888FD32A520F88000F78F3 /* NibDesignable.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36888FAB2A51F209000F78F3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				36888FAC2A51F209000F78F3 /* MapsList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		36888FAC2A51F209000F78F3 /* MapsList */ = {
+			isa = PBXGroup;
+			children = (
+				36888FE62A528399000F78F3 /* Cells */,
+				36888FDC2A527CB2000F78F3 /* Structs */,
+				36888FCD2A520BC6000F78F3 /* Views */,
+				36888FAD2A51F209000F78F3 /* MapsListPresenter.swift */,
+				36888FAE2A51F209000F78F3 /* MapsListViewController.swift */,
+				36888FAF2A51F209000F78F3 /* MapsListModel.swift */,
+				36888FB02A51F209000F78F3 /* MapsListMainConfigurator.swift */,
+				36888FEF2A52BD6F000F78F3 /* MapListConfigurator.swift */,
+			);
+			path = MapsList;
+			sourceTree = "<group>";
+		};
+		36888FC82A520B89000F78F3 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				36888FC92A520B89000F78F3 /* NavigationBar.swift */,
+				36888FCA2A520B89000F78F3 /* NavigationBar.xib */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		36888FCD2A520BC6000F78F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36888FCE2A520BC6000F78F3 /* DeviceDataView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36888FCE2A520BC6000F78F3 /* DeviceDataView */ = {
+			isa = PBXGroup;
+			children = (
+				36888FCF2A520BEE000F78F3 /* DeviceDataView.swift */,
+				36888FD12A520C05000F78F3 /* DeviceDataView.xib */,
+			);
+			path = DeviceDataView;
+			sourceTree = "<group>";
+		};
+		36888FDC2A527CB2000F78F3 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				36888FDD2A527CB2000F78F3 /* PlainModels */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		36888FDD2A527CB2000F78F3 /* PlainModels */ = {
+			isa = PBXGroup;
+			children = (
+				36888FDE2A527CC5000F78F3 /* CountryCellPlainModel.swift */,
+			);
+			path = PlainModels;
+			sourceTree = "<group>";
+		};
+		36888FE02A527EFF000F78F3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				36888FE32A527FFE000F78F3 /* Data */,
+				36888FE12A527F23000F78F3 /* XMLParserManager.swift */,
+				36888FF12A52DDC9000F78F3 /* PendingOperation.swift */,
+				36888FF32A52DE71000F78F3 /* MapDownloader.swift */,
+				36888FF52A52E4EC000F78F3 /* DatabaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		36888FE32A527FFE000F78F3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				36888FE42A528012000F78F3 /* CountryRepresentation.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		36888FE62A528399000F78F3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				36888FE72A5283AE000F78F3 /* CountryTableViewCell.swift */,
+				36888FE82A5283AE000F78F3 /* CountryTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +416,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36888FD22A520C05000F78F3 /* DeviceDataView.xib in Resources */,
+				36888FEE2A5293B6000F78F3 /* regions.xml in Resources */,
 				36888F572A51C4CA000F78F3 /* LaunchScreen.storyboard in Resources */,
+				36888FEA2A5283AE000F78F3 /* CountryTableViewCell.xib in Resources */,
 				36888F542A51C4CA000F78F3 /* Assets.xcassets in Resources */,
+				36888F8F2A51EA30000F78F3 /* ColorAssets.xcassets in Resources */,
 				36888F522A51C4C9000F78F3 /* Main.storyboard in Resources */,
+				36888FCC2A520B89000F78F3 /* NavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +434,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36888F4F2A51C4C9000F78F3 /* ViewController.swift in Sources */,
-				36888F4B2A51C4C9000F78F3 /* AppDelegate.swift in Sources */,
-				36888F4D2A51C4C9000F78F3 /* SceneDelegate.swift in Sources */,
+				36888FC32A51F209000F78F3 /* MapsListMainConfigurator.swift in Sources */,
+				36888FDB2A52209F000F78F3 /* Units.swift in Sources */,
+				36888FBD2A51F209000F78F3 /* BaseNavigationViewController.swift in Sources */,
+				36888FDF2A527CC5000F78F3 /* CountryCellPlainModel.swift in Sources */,
+				36888FF22A52DDC9000F78F3 /* PendingOperation.swift in Sources */,
+				36888FB92A51F209000F78F3 /* Presenter.swift in Sources */,
+				36888FB72A51F209000F78F3 /* Model.swift in Sources */,
+				36888FE22A527F23000F78F3 /* XMLParserManager.swift in Sources */,
+				36888FD02A520BEE000F78F3 /* DeviceDataView.swift in Sources */,
+				36888FB52A51F209000F78F3 /* Constants.swift in Sources */,
+				36888FBE2A51F209000F78F3 /* AppDelegate.swift in Sources */,
+				36888FBF2A51F209000F78F3 /* SceneDelegate.swift in Sources */,
+				36888FB32A51F209000F78F3 /* BaseConfigurator.swift in Sources */,
+				36888FE92A5283AE000F78F3 /* CountryTableViewCell.swift in Sources */,
+				36888FF02A52BD6F000F78F3 /* MapListConfigurator.swift in Sources */,
+				36888FF42A52DE71000F78F3 /* MapDownloader.swift in Sources */,
+				36888FC02A51F209000F78F3 /* MapsListPresenter.swift in Sources */,
+				36888FBB2A51F209000F78F3 /* ViewController.swift in Sources */,
+				36888FBC2A51F209000F78F3 /* BaseViewController.swift in Sources */,
+				36888FB12A51F209000F78F3 /* ControllerCreationFabric.swift in Sources */,
+				36888FC12A51F209000F78F3 /* MapsListViewController.swift in Sources */,
+				36888FC22A51F209000F78F3 /* MapsListModel.swift in Sources */,
+				36888FB22A51F209000F78F3 /* Controllers.swift in Sources */,
+				36888FE52A528012000F78F3 /* CountryRepresentation.swift in Sources */,
+				36888FCB2A520B89000F78F3 /* NavigationBar.swift in Sources */,
+				36888FB42A51F209000F78F3 /* BaseConfiguratorContainingControllerType.swift in Sources */,
+				36888FF62A52E4EC000F78F3 /* DatabaseManager.swift in Sources */,
+				36888FBA2A51F209000F78F3 /* NavigationControllerEmbedding.swift in Sources */,
+				36888FD42A520F88000F78F3 /* NibDesignable.swift in Sources */,
+				36888FB82A51F209000F78F3 /* Configurable.swift in Sources */,
+				36888FB62A51F209000F78F3 /* PlainModelFillable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

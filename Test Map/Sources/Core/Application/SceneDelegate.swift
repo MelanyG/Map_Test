@@ -17,6 +17,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        let configurator = MapListMainConfigurator()
+        window?.rootViewController = configurator.controller
+        configureStatusBar()
+    }
+    
+    func configureStatusBar() {
+        if let frames = window?.rootViewController?.navigationController?.view.window?.windowScene?.statusBarManager?.statusBarFrame {
+            let statusBarView = UIView(frame: frames)
+            statusBarView.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
+            let statusBarColor = UIColor(named: "MainOrange")
+            statusBarView.backgroundColor = statusBarColor
+            window?.rootViewController?.navigationController?.view.addSubview(statusBarView)
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

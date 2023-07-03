@@ -1,15 +1,23 @@
 //
-//  MapListConfigurator.swift
+//  MapsListMainConfigurator.swift
 //  Test Map
 //
-//  Created by Melany Gulianovych on 03.07.2023.
+//  Created by Melany Gulianovych on 02.07.2023.
 //
+
 
 import UIKit
 
-class MapListConfigurator: BaseConfigurator {
-    var country: CountryRepresentation!
-    override init() {}
+class MapListMainConfigurator: BaseConfiguratorContainingControllerType {
+    private let type: ControllerCreationable
+
+    init(isLoadedWithPrefilledControllers: Bool = true) {
+        type = Controllers.mapList
+
+        super.init(with: type)
+        
+        isFirstInFlow = true
+    }
     
     override func generateController() -> UIViewController {
         let controllerType: Controllers = .mapList
@@ -17,7 +25,7 @@ class MapListConfigurator: BaseConfigurator {
         guard let viewController = ControllerCreationFabric.default.controller(for: controllerType) as? MapsListViewController else {
             return UIViewController()
         }
-        let presenter = MapsListPresenter(title: country.name.capitalized, model: MapsListModel(regions: country.regions))
+        let presenter = MapsListPresenter(model: MapsListModel())
         viewController.presenter = presenter
         presenter.controller = viewController
         
@@ -31,12 +39,11 @@ class MapListConfigurator: BaseConfigurator {
                 navigationController.pushViewController(configurator.controller, animated: true)
             }
         }
-        
-        presenter.backSelected = { [weak viewController] in
-            DispatchQueue.main.async {
-                viewController?.navigationController?.popViewController(animated: true)
-            }
-        }
+//        presenter.onLogOut = { [weak viewController] in
+//            DispatchQueue.main.async {
+//                viewController?.navigationController?.popViewController(animated: true)
+//            }
+//        }
         
         return viewController
     }

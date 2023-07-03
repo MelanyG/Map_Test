@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+protocol PlainModel { }
+
+protocol PlainModelFillable {
+    func fill(with model: PlainModel)
+}

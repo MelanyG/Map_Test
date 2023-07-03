@@ -7,14 +7,14 @@
 
 import UIKit
 
-class DeviceDataView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class DeviceDataView: NibDesignable {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var deviceDataLabel: UILabel!
+    @IBOutlet weak var progressBar: UIProgressView!
+    
+    func setUpData(progress: Float, freeSpace: String) {
+        progressBar.progress = progress
+        progressBar.setProgress(progressBar.progress, animated: true)
+        deviceDataLabel.text = freeSpace
     }
-    */
-
 }
